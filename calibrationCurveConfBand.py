@@ -1,7 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import t
-
+#numpy==1.24.4
+#matplotlib==3.7.4
+#scipy==1.10.1
 
 class LOD_CALC:
     def __init__(self, conc, intensity, sample_intensity=None, confidence_level=0.95):
@@ -125,3 +127,4 @@ if __name__ == "__main__":
 
     calc = LOD_CALC(conc, intensity, sample_intensity, confidence_level=0.95)
     calc.plot(show_lod=True, show_3sigma=False)
+
